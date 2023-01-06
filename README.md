@@ -24,7 +24,7 @@ https://www.notion.so/Suction-Gripper-61775be6f6b241709b4bf4eefb0ca258#ff778a6f2
 In vacuum_planner.launch, change below line
 
 ```
-<!--node pkg="unld_indy_planner" type="vacuum_controller.py" name="vacuum_controller" output="log"/-->
+<node pkg="unld_indy_planner" type="vacuum_controller.py" name="vacuum_controller" output="log"/>
 ```
 
 into
