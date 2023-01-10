@@ -4,6 +4,14 @@ rosserial commuication for control solenoid valve.
 
 ## How to Use
 
+### 0. Install dependencies
+
+```
+sudo apt-get install ros-noetic-rosserial-python
+```
+
+<br>
+
 ### 1. Upload vacuum_cmd.ino into Arduino Uno.
 
 Currently, solenoid valve No. 1, 2, 3, 4, 5, 6 is connected to pin number 5, 3, 9, 6, 11, 10, respectively.
