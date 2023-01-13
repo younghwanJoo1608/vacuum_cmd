@@ -1,8 +1,37 @@
 # vacuum_cmd
-rosserial commuication for control solenoid valve.
+commuication for control solenoid valve.
 
+---
 
-## How to Use
+## Communicate Using pyFirmata
+
+### 1. Upload StandardFirmata.ino into Arduino Uno.
+
+<br>
+
+### 2. Connect Arduino uno into vacuum system.
+
+Check the suction gripper manual page.
+
+https://www.notion.so/Suction-Gripper-61775be6f6b241709b4bf4eefb0ca258#ff778a6f20524d41809ff8164e29a848
+
+<br>
+
+### 3. Import rosserial package to launch file.
+
+In vacuum_planner.launch, write down below line
+
+```
+<node pkg="unld_indy_planner" type="vacuum_controller.py" name="vacuum_controller" output="log"/>
+```
+
+<br>
+
+### 4. Check if the entire system works.
+
+---
+
+## Communicate Using Rosserial
 
 ### 0. Install dependencies
 
